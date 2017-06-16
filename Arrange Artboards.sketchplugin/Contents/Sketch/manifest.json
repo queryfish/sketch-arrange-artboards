@@ -1,21 +1,21 @@
 {
-    "name" : "Arrange Artboards",
-    "description" : "Layout all artboards neatly in a grid with user-specified number of rows",
-    "author" : "Ken Moore",
-    "authorEmail" : "kenmoore@gmail.com",
+    "name" : "Artboards Namer",
+    "description" : "Layout and rename(with prefix) all artboards neatly in a grid with user-specified number of rows or automatically for current page layout",
+    "author" : "Steve Wood",
+    "authorEmail" : "marrowsky@gmail.com",
     "version" : "1.0",
-    "identifier" : "com.kenmoore.sketch.arrangeartboards",
+    "identifier" : "com.stevewood.sketch.artboardsnamer",
 
     "commands" : [
     {
-      "script" : "Arrange Artboards.js",
-      "name" : "Arrange Artboards",
-      "handler" : "arrangeArtboards",
-      "identifier" : "arrangeartboards"
+      "script" : "ArtboardsNamer.js",
+      "name" : "Artboards Namer",
+      "handler" : "artboardsNamer",
+      "identifier" : "artboardsNamer"
     }
   ],
    "menu" : {
     "isRoot" : true,
-    "items": [ "arrangeartboards" ]
+    "items": [ "artboardsNamer" ]
    }
 }

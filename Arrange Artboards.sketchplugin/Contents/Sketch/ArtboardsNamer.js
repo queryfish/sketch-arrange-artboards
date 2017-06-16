@@ -1,12 +1,12 @@
 // Arrange Artboards Plugin
 /*
-  Author: Ken Moore
+  Author: Steve Wood
   Layout all artboards neatly in a grid with user-specified number of rows.
 */
 
-var arrangeArtboards = function(context) {
-  // set doc and selection to work around the Sketch 3.4 - 3.4.2 bug 
-  // where plugins often target a non-foreground document 
+var artboardsNamer = function(context) {
+  // set doc and selection to work around the Sketch 3.4 - 3.4.2 bug
+  // where plugins often target a non-foreground document
   var doc = NSDocumentController.sharedDocumentController().currentDocument() || NSDocumentController.sharedDocumentController().documents().firstObject()
 
   var page = [doc currentPage];
@@ -42,4 +42,3 @@ var arrangeArtboards = function(context) {
     }
   }
 }
-
